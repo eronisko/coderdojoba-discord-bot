@@ -4,11 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
+    "setup": "node -r dotenv/config ./build/setup.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "prettier": "^2.5.1"
+    "@types/node": "^17.0.21",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "@discordjs/rest": "^0.3.0",
+    "discord-api-types": "^0.27.3",
+    "discord.js": "^13.6.0",
+    "dotenv": "^16.0.0"
   }
 }
